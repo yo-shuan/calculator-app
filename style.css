@@ -43,14 +43,14 @@ button {
     padding: 20px;
     font-size: 1.2em;
     border: none;
-    background: #f0f0f0;
+    background: #e3f2fd;  /* 改為淺藍色 */
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 button:hover {
-    background: #e0e0e0;
+    background: #bbdefb;  /* hover時的顏色 */
 }
 
 button:active {
@@ -58,13 +58,13 @@ button:active {
 }
 
 .equals {
-    background: #667eea;
+    background: #2196f3;  /* 改為藍色 */
     color: white;
     grid-row: span 2;
 }
 
 .equals:hover {
-    background: #5568d3;
+    background: #19d222;
 }
 
 .zero {
