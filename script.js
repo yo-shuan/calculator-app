@@ -27,7 +27,7 @@ function deleteLast() {
     }
     updateDisplay();
 }
-
+/*
 function calculate() {
     try {
         currentInput = eval(currentInput).toString();
@@ -40,7 +40,7 @@ function calculate() {
             updateDisplay();
         }, 1500);
     }
-}
+}*/
 // 在 script.js 末尾增加
 function calculatePercentage() {
     try {
