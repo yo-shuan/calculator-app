@@ -70,3 +70,30 @@ button:active {
 .zero {
     grid-column: span 2;
 }
+
+/* 新增記憶按鈕樣式 */
+.memory-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.memory-btn {
+    padding: 15px;
+    font-size: 1em;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.memory-btn:hover {
+    background: #f57c00;
+}
+
+.memory-btn:active {
+    transform: scale(0.95);
+}
