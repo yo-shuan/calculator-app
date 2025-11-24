@@ -98,21 +98,27 @@ button:active {
     transform: scale(0.95);
 }
 
-/* 科學計算按鈕樣式 */
-.scientific-buttons {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 8px;
+/* 科學計算下拉選單樣式 */
+.scientific-dropdown {
     margin-bottom: 10px;
 }
 
-.scientific-buttons button {
-    padding: 12px 8px;
-    font-size: 0.9em;
+.scientific-dropdown select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
     background: #4caf50;
     color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.scientific-buttons button:hover {
-    background: #45a049;
+.scientific-dropdown select:focus {
+    outline: 2px solid #45a049;
+}
+
+.scientific-dropdown option {
+    background: white;
+    color: #333;
 }
