@@ -79,6 +79,8 @@ button:active {
     margin-bottom: 10px;
 }
 
+
+
 .memory-btn {
     padding: 15px;
     font-size: 1em;
@@ -96,4 +98,29 @@ button:active {
 
 .memory-btn:active {
     transform: scale(0.95);
+}
+
+/* 科學計算下拉選單樣式 */
+.scientific-dropdown {
+    margin-bottom: 10px;
+}
+
+.scientific-dropdown select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scientific-dropdown select:focus {
+    outline: 2px solid #45a049;
+}
+
+.scientific-dropdown option {
+    background: white;
+    color: #333;
 }

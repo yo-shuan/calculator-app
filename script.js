@@ -99,3 +99,52 @@ function showMemoryIndicator() {
 function hideMemoryIndicator() {
     display.style.borderLeft = 'none';
 }
+
+// 新增科學計算函數（下拉選單版本）
+function applyScientificOp() {
+    let select = document.getElementById('scientificOp');
+    let operation = select.value;
+    
+    if (!operation) return;
+    
+    try {
+        let value = eval(currentInput);
+        let result;
+        
+        switch(operation) {
+            case 'sin':
+                result = Math.sin(value * Math.PI / 180);
+                break;
+            case 'cos':
+                result = Math.cos(value * Math.PI / 180);
+                break;
+            case 'tan':
+                result = Math.tan(value * Math.PI / 180);
+                break;
+            case 'log':
+                result = Math.log10(value);
+                break;
+            case 'sqrt':
+                result = Math.sqrt(value);
+                break;
+            case 'pow':
+                result = Math.pow(value, 2);
+                break;
+            default:
+                result = value;
+        }
+        
+        currentInput = result.toString();
+        updateDisplay();
+        
+        // 重置選單
+        select.value = '';
+    } catch (error) {
+        currentInput = 'Error';
+        updateDisplay();
+        setTimeout(() => {
+            currentInput = '0';
+            updateDisplay();
+        }, 1500);
+    }
+}

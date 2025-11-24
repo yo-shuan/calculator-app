@@ -10,12 +10,27 @@
     <div class="calculator">
         <div class="display" id="display">0</div>
 
+        <!-- 記憶按鈕 -->
         <div class="memory-buttons">
             <button onclick="memoryAdd()" class="memory-btn">M+</button>
             <button onclick="memorySubtract()" class="memory-btn">M-</button>
             <button onclick="memoryRecall()" class="memory-btn">MR</button>
             <button onclick="memoryClear()" class="memory-btn">MC</button>
         </div>
+
+        <!-- 新增科學計算選單 -->
+        <div class="scientific-dropdown">
+            <select id="scientificOp" onchange="applyScientificOp()">
+                <option value="">選擇科學計算...</option>
+                <option value="sin">sin (正弦)</option>
+                <option value="cos">cos (餘弦)</option>
+                <option value="tan">tan (正切)</option>
+                <option value="log">log (對數)</option>
+                <option value="sqrt">√ (平方根)</option>
+                <option value="pow">x² (平方)</option>
+            </select>
+        </div>
+
 
         <div class="buttons">
             <button onclick="clearDisplay()">C</button>
