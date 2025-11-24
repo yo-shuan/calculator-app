@@ -10,11 +10,22 @@
     <div class="calculator">
         <div class="display" id="display">0</div>
 
+        <!-- 記憶按鈕 -->
         <div class="memory-buttons">
             <button onclick="memoryAdd()" class="memory-btn">M+</button>
             <button onclick="memorySubtract()" class="memory-btn">M-</button>
             <button onclick="memoryRecall()" class="memory-btn">MR</button>
             <button onclick="memoryClear()" class="memory-btn">MC</button>
+        </div>
+
+        <!-- 新增科學計算按鈕區 -->
+        <div class="scientific-buttons">
+            <button onclick="scientificCalc('sin')">sin</button>
+            <button onclick="scientificCalc('cos')">cos</button>
+            <button onclick="scientificCalc('tan')">tan</button>
+            <button onclick="scientificCalc('log')">log</button>
+            <button onclick="scientificCalc('sqrt')">√</button>
+            <button onclick="scientificCalc('pow')">x²</button>
         </div>
 
         <div class="buttons">
